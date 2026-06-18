@@ -1,1 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#7c68ff"/><stop offset="1" stop-color="#15d1ff"/></linearGradient></defs><rect width="512" height="512" rx="120" fill="#070711"/><path d="M108 116h296L292 396h-72L108 116Zm94 62 55 145 55-145h-110Z" fill="url(#g)"/><circle cx="382" cy="128" r="34" fill="#15d1ff" opacity=".9"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Vocabulato flashcard icon">
+  <defs>
+    <linearGradient id="board" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07110b"/>
+      <stop offset="1" stop-color="#16472b"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fff7"/>
+      <stop offset="1" stop-color="#dfffbd"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#42d77d"/>
+      <stop offset="1" stop-color="#d9ff6a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#board)"/>
+  <path d="M92 112h328v252H92z" rx="26" fill="#0b2114" stroke="#8be8a8" stroke-width="10" opacity=".96"/>
+  <path d="M126 160h130M126 208h86M126 256h150" stroke="#eaffdf" stroke-width="18" stroke-linecap="round" opacity=".95"/>
+  <g filter="url(#shadow)">
+    <rect x="232" y="172" width="174" height="220" rx="30" fill="url(#card)" transform="rotate(-8 319 282)"/>
+    <rect x="258" y="198" width="92" height="16" rx="8" fill="#0f9f5a" transform="rotate(-8 304 206)" opacity=".9"/>
+    <path d="M300 250l28 74 30-82h34l-50 122h-31l-46-114h35z" fill="#17351f" transform="rotate(-8 328 303)"/>
+  </g>
+  <circle cx="396" cy="118" r="32" fill="url(#accent)"/>
+  <path d="M114 400h284" stroke="#d9ff6a" stroke-width="22" stroke-linecap="round"/>
+</svg>
