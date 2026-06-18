@@ -130,7 +130,7 @@ function installTemplate() {
     <section class="install-card" aria-label="Install Vocabulato">
       <div><strong>Install Vocabulato</strong><span>${canPrompt ? 'Add it to your home screen for offline practice.' : 'Use your browser Share/Add to Home Screen menu if no prompt appears.'}</span></div>
       <div class="install-actions">
-        <button id="installBtn" class="primary small" type="button" ${canPrompt ? '' : 'disabled'}>Install</button>
+        <button id="installBtn" class="primary small" type="button">${canPrompt ? 'Install' : 'How to install'}</button>
         <button id="dismissInstallBtn" class="ghost small" type="button">Not now</button>
       </div>
     </section>`;
@@ -199,7 +199,10 @@ function render() {
 }
 
 async function promptInstall() {
-  if (!deferredInstallPrompt) return;
+  if (!deferredInstallPrompt) {
+    alert('To install Vocabulato: on iPhone/iPad use Share → Add to Home Screen. In Chrome or Edge, use the install icon in the address bar or browser menu.');
+    return;
+  }
   await deferredInstallPrompt.prompt();
   const choice = await deferredInstallPrompt.userChoice;
   if (choice.outcome === 'accepted' || choice.outcome === 'dismissed') localStorage.setItem(INSTALL_DISMISSED_KEY, 'yes');
