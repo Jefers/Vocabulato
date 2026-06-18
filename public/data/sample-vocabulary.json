@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "name": "Thai starter phrases",
+  "sourceLanguage": "English",
+  "targetLanguage": "Thai",
+  "cards": [
+    {"id":"thai-hello","source":"Hello","target":"สวัสดี","phonetic":"sa-wat-dee"},
+    {"id":"thai-thank-you","source":"Thank you","target":"ขอบคุณ","phonetic":"khop-khun"},
+    {"id":"thai-goodbye","source":"Goodbye","target":"ลาก่อน","phonetic":"laa-gon"},
+    {"id":"thai-water","source":"Water","target":"น้ำ","phonetic":"naam"},
+    {"id":"thai-how-much","source":"How much?","target":"เท่าไหร่","phonetic":"tao-rai"},
+    {"id":"thai-yes","source":"Yes","target":"ใช่","phonetic":"chai"},
+    {"id":"thai-no","source":"No","target":"ไม่","phonetic":"mai"},
+    {"id":"thai-good","source":"Good","target":"ดี","phonetic":"dee"},
+    {"id":"thai-gym","source":"Gym","target":"ยิม","phonetic":"yim"},
+    {"id":"thai-strong","source":"Strong","target":"แข็งแรง","phonetic":"khaeng-raeng"}
+  ]
+}
